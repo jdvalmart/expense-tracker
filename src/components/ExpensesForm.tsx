@@ -26,25 +26,24 @@ const ExpensesForm: React.FC<ExpensesFormProps> = ({ onAddExpense }) => {
     setAmount("");
   };
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-md mx-auto bg-white p-6 rounded-lg shadow space-y-4"
-    >
+    <form onSubmit={handleSubmit} className=" space-y-4 mb-6">
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-300"
+        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+        placeholder="Gasto"
       />
       <input
         type="number"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
-        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-300"
+        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+        placeholder="Valor"
       />
       <button
         type="submit"
-        className="w-full bg-indigo-600 text-white py-2 rounded"
+        className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition"
       >
         Agregar gasto
       </button>
