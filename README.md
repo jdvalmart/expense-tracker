@@ -23,3 +23,8 @@ Un gasto está compuesto por:
 - Identificador único
 - Descripción
 - Monto
+
+## Creación de gastos
+
+La aplicación permite crear nuevos gastos mediante un formulario controlado.
+Los datos se validan de forma básica y se almacenan en el estado local.
