@@ -1,40 +1,54 @@
-# Expense Tracker
+# 💸 Expense Tracker
 
-Aplicación de control de gastos construida con React y TypeScript.
-Este proyecto hace parte de mi portafolio personal y tiene como objetivo
-demostrar el uso correcto de los fundamentos de React.
+Aplicación web para el control de gastos personales construida con **React**, **TypeScript** y **Tailwind CSS**.
 
-## Tecnologías
+## 🚀 Demo
+
+(agregar link cuando se despliegue)
+
+## 🛠️ Tecnologías
 
 - React
 - TypeScript
+- Tailwind CSS
 - Vite
 
-## Funcionalidades
+## ✨ Funcionalidades
 
 - Agregar gastos
-- Listar gastos
-- Calcular total de gastos
+- Visualizar lista de gastos
+- UI responsive
+- Componentes tipados con TypeScript
 
-## Modelo de datos
+## 🧠 Conceptos aplicados
 
-Un gasto está compuesto por:
+- Componentes funcionales
+- useState
+- Props y lifting state up
+- Formularios controlados
+- Renderizado de listas
+- Estilizado con Tailwind CSS
 
-- Identificador único
-- Descripción
-- Monto
+## 📂 Estructura del proyecto
 
-## Creación de gastos
+src/
+├─ components/
+│ ├─ ExpensesForm.tsx
+│ ├─ ExpenseList.tsx
+│ └─ ExpenseItem.tsx
+├─ types/
+│ └─ expense.ts
+├─ App.tsx
+└─ main.tsx
 
-La aplicación permite crear nuevos gastos mediante un formulario controlado.
-Los datos se validan de forma básica y se almacenan en el estado local.
+## 📦 Instalación
 
-## Arquitectura de componentes
+```bash
+bun install
+bun run dev
 
-El formulario de creación de gastos fue extraído a un componente independiente.
-El estado permanece en el componente principal y la comunicación se realiza mediante callbacks.
+```
 
-## Eliminación de gastos
-
-La aplicación permite eliminar gastos individuales.
-La acción se maneja mediante callbacks y actualización inmutable del estado.
+👨‍💻 Autor
+Juan Valencia
+Ingeniero de Software
