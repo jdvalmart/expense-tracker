@@ -16,10 +16,14 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Lista de gastos</h1>
-      <ExpensesForm onAddExpense={addExpense} />
-      <ExpenseList expenses={expenses} onDeleteExpense={deleteExpense} />
+    <div className="min-h-screen bg-gray-100 flex justify-center ">
+      <div className="w-full max-w-xl bg-white rounded-xl shadow-md p-6 mt-10">
+        <h1 className="text-2xl font-semibold text-center text-gray-800 mb-4">
+          Lista de gastos
+        </h1>
+        <ExpensesForm onAddExpense={addExpense} />
+        <ExpenseList expenses={expenses} onDeleteExpense={deleteExpense} />
+      </div>
     </div>
   );
 }

@@ -26,18 +26,28 @@ const ExpensesForm: React.FC<ExpensesFormProps> = ({ onAddExpense }) => {
     setAmount("");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-md mx-auto bg-white p-6 rounded-lg shadow space-y-4"
+    >
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-300"
       />
       <input
         type="number"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
+        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-indigo-300"
       />
-      <button type="submit">Agregar gasto</button>
+      <button
+        type="submit"
+        className="w-full bg-indigo-600 text-white py-2 rounded"
+      >
+        Agregar gasto
+      </button>
     </form>
   );
 };

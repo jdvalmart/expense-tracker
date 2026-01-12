@@ -33,3 +33,8 @@ Los datos se validan de forma básica y se almacenan en el estado local.
 
 El formulario de creación de gastos fue extraído a un componente independiente.
 El estado permanece en el componente principal y la comunicación se realiza mediante callbacks.
+
+## Eliminación de gastos
+
+La aplicación permite eliminar gastos individuales.
+La acción se maneja mediante callbacks y actualización inmutable del estado.
