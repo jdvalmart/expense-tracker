@@ -10,13 +10,17 @@ const ExpenseList: React.FC<ExpenseListProps> = ({
   expenses,
   onDeleteExpense,
 }) => {
-  return expenses.map((expense) => (
-    <ExpenseItem
-      key={expense.id}
-      expense={expense}
-      onDelete={onDeleteExpense}
-    />
-  ));
+  return (
+    <div className="space-y-3">
+      {expenses.map((expense) => (
+        <ExpenseItem
+          key={expense.id}
+          expense={expense}
+          onDelete={onDeleteExpense}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default ExpenseList;
