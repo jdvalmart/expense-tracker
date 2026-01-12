@@ -28,3 +28,8 @@ Un gasto está compuesto por:
 
 La aplicación permite crear nuevos gastos mediante un formulario controlado.
 Los datos se validan de forma básica y se almacenan en el estado local.
+
+## Arquitectura de componentes
+
+El formulario de creación de gastos fue extraído a un componente independiente.
+El estado permanece en el componente principal y la comunicación se realiza mediante callbacks.

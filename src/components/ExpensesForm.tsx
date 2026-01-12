@@ -5,7 +5,7 @@ interface ExpensesFormProps {
   onAddExpense: (expense: Expense) => void;
 }
 
-export const ExpensesForm: React.FC<ExpensesFormProps> = ({ onAddExpense }) => {
+const ExpensesForm: React.FC<ExpensesFormProps> = ({ onAddExpense }) => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
 
@@ -41,3 +41,4 @@ export const ExpensesForm: React.FC<ExpensesFormProps> = ({ onAddExpense }) => {
     </form>
   );
 };
+export default ExpensesForm;
