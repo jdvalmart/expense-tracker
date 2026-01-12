@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center ">
       <div className="w-full max-w-xl bg-white rounded-xl shadow-md p-6 mt-10">
-        <h1 className="text-2xl font-semibold text-center text-gray-800 mb-4">
+        <h1 className="text-3xl font-bold text-zinc-900 tracking-tiht mb-6 text-center">
           Lista de gastos
         </h1>
         <ExpensesForm onAddExpense={addExpense} />
