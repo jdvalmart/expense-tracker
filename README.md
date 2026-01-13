@@ -31,6 +31,7 @@ Aplicación web para el control de gastos personales construida con **React**, *
 
 ## 📂 Estructura del proyecto
 
+```
 src/
 ├─ components/
 │ ├─ ExpensesForm.tsx
@@ -40,6 +41,11 @@ src/
 │ └─ expense.ts
 ├─ App.tsx
 └─ main.tsx
+
+```
+
+perl
+Copiar código
 
 ## 📦 Instalación
 
